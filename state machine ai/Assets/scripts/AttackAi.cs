@@ -49,7 +49,6 @@ public class AttackAi : MonoBehaviour
         currentState.ExitState();
         currentState = nextState;
         currentState.EnterState();
-        Debug.Log(nextState);
     }
 
     private void Awake()
