@@ -16,11 +16,11 @@ And two state controllers or the AI itself:
 
 The ChaseAI in action:
 
-![alt text](2025-07-11-16-35-13.gif)
+![alt text](chase.gif)
 
 The AttackAI in action:
 
-![alt text](2025-07-11-16-32-58.gif)
+![alt text](attack.gif)
 
 # How it's done
 Its a component based architecture.
