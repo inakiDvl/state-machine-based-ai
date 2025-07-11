@@ -23,7 +23,7 @@ The AttackAI in action:
 ![alt text](attack.gif)
 
 # How it's done
-Its a component based architecture.
+It's a component based architecture.
 
 Components:
 - TargetComponent
@@ -36,7 +36,7 @@ Components:
 The State Machine or AI its the component that manages the transition between states.
 To transition to a new state, first make sure the current state its not the next state, then it must exit the previous state, set the current stete as the next state and finally enter the current state:
 
-```cs
+```csharp
 private void ChangeState(IState nextState)
 {
     if (currentState == nextState)
@@ -49,7 +49,7 @@ private void ChangeState(IState nextState)
 ```
 
 The IState interface:
-```cs
+```csharp
 public interface IState
 {
     public void EnterState();
@@ -60,7 +60,7 @@ public interface IState
 
 Example of the transitions in AttackAI:
 
-```cs
+```csharp
 private void HandleTransitions()
 {
     if (!targetComponent.TryGetTarget(out Transform _))
@@ -88,4 +88,4 @@ private void HandleTransitions()
 
     ChangeState(idleState);
 }
-```cs
+```
